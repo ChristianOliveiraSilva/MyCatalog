@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    color: #333;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+main > header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 10px;
+    box-shadow: 0px 5px 3px #aaa;
+}
+
+main > header button {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+main > header button.active {
+    background-color: #bbb;
+}
+
+main > section {
+    overflow-x: none;
+}
+
+main > footer {
+    padding: 5px;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.grid {
+    margin: 10px 45px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    align-content: start;
+}
+
+
+.grid > div {
+    border: 1px solid #aaa;
+    box-shadow: 3px 5px 3px #aaa;
+    padding: 20px;
+}
