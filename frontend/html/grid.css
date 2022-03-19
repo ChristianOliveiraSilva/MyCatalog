@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 .grid {
-    margin: 10px 45px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, auto);
@@ -14,4 +13,18 @@
     border: 1px solid #aaa;
     box-shadow: 3px 5px 3px #aaa;
     padding: 20px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: auto;
+    }
 }
