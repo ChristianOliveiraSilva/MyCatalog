@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+
+.grid > .card {
+    border: 1px solid #aaa;
+    box-shadow: 3px 5px 3px #aaa;
+    padding: 20px;
+    width: 22vw;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .grid {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .grid > .card {
+        width: 40vw;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+
+    .grid > .card {
+        width: 85vw;
+    }
+}

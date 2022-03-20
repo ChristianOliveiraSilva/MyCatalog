@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    color: #333;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+main > header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 10px;
+    box-shadow: 0px 5px 3px #aaa;
+}
+
+main > header .title {
+    font-size: 2.5em;
+}
+
+main > header button {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+main > header button.active {
+    background-color: #bbb;
+}
+
+main > section#content {
+    margin: 30px auto 0px;
+    max-width: 1400px;
+    padding: 0px 30px;
+}
+
+main > footer {
+    padding: 5px;
+    text-align: center;
+}
+
+.btn-buy {
+    padding: 12px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: #ccc;
+}

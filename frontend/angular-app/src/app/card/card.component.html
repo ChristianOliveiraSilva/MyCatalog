@@ -1,0 +1,15 @@
+
+    <header>{{product.name || 'MyCatalog - header'}}</header>
+    <section class="content">
+        {{
+            product.description
+            ||
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente omnis dicta vero ipsam atque quae, suscipit reprehenderit non nisi delectus.'
+        }}
+    </section>
+    <footer>
+        <button *ngIf="product.count > 0; else noCount" className="btn-buy">Produto disponível</button>
+        <ng-template #noCount>
+            <p><small>Produto fora da loja</small></p>
+        </ng-template>
+    </footer>

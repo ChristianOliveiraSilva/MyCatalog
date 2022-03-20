@@ -1,0 +1,16 @@
+<main>
+    <header>
+        <h3 class="title">MyCatalog</h3>
+
+        <div class="options">
+            <button [class]="layout == 0 ? 'active' : ''" (click)="toggleLayout(0)">Grid</button>
+            <button [class]="layout == 1 ? 'active' : ''" (click)="toggleLayout(1)">Flex</button>
+        </div>
+    </header>
+    <section id="content" [class]="layout == 0 ? 'grid' : 'flex'">
+        <app-card class="card" *ngFor="let product of products" [product]="product" ></app-card>
+    </section>
+    <footer>
+        <p>Feito por Christian Oliveira</p>
+    </footer>
+</main>
